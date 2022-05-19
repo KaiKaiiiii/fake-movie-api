@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 font-body px-5;
+  }
+}
+
+@layer components {
+  .page-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  //   .movie-list .swiper-slide {
+  //     width: 200px;
+  //   }
+  .paginate {
+    @apply flex items-center justify-center text-white gap-x-5 py-10;
+    .selected {
+      @apply bg-pink-500 text-white rounded-md p-2;
+    }
+  }
+}
